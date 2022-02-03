@@ -4,6 +4,7 @@
 }
 #wrapper {
   height: 100vh;
+  overflow: hidden;
 }
 /* navigation bar starts */
 #top_nav {
@@ -82,3 +83,48 @@
   color: gray;
 }
 /* main boxes end */
+/* footer start */
+#footer {
+  height: 20%;
+  margin-top: 30px;
+}
+#subscribe_block {
+  height: 70%;
+  width: 100%;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#subscribe_block > span {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0px 10px;
+}
+#subscribe_block > input {
+  width: 30%;
+  height: 30px;
+  margin: 0px 10px;
+}
+#subscribe_block > button {
+  width: 17%;
+  height: 35px;
+  margin: 0px 10px;
+  background-color: #288acf;
+  border: none;
+}
+#subscribe_block > button > span {
+  color: white;
+  text-align: start;
+  font-weight: bold;
+  margin-right: 70px;
+}
+
+#copyright {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  justify-content: space-between;
+  font-size: small;
+}
+/* footer ends */
