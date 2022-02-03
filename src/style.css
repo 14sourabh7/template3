@@ -3,12 +3,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 #wrapper {
-  height: 100vh;
-  overflow: hidden;
 }
 /* navigation bar starts */
 #top_nav {
-  height: 30px;
   padding: 20px 40px 20px 40px;
 
   display: flex;
@@ -28,7 +25,7 @@
 /* /* banner start * */
 #banner {
   background-color: #eeeeee;
-  height: 25%;
+  width: 100%;
   padding: 15px 15px 10px 15px;
 }
 .banner_content {
@@ -46,23 +43,22 @@
 
 #main {
   display: flex;
-  height: 30%;
-
-  margin: auto;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
   align-items: center;
   justify-content: space-around;
 }
 
 .box_item {
-  width: 17%;
+  width: 200px;
   display: flex;
+
   text-align: center;
   align-items: center;
   flex-direction: column;
 }
 #gray_color {
-  height: 100px;
+  padding: 60px 0px;
   background-color: #eeeeee;
   width: 100%;
   margin-bottom: 5px;
@@ -85,11 +81,11 @@
 /* main boxes end */
 /* footer start */
 #footer {
-  height: 20%;
-  margin-top: 30px;
+  margin-top: 10px;
+  padding: 10px;
 }
 #subscribe_block {
-  height: 70%;
+  padding: 7px;
   width: 100%;
   background-color: #eeeeee;
   display: flex;
@@ -98,17 +94,17 @@
 }
 #subscribe_block > span {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0px 10px;
 }
 #subscribe_block > input {
   width: 30%;
-  height: 30px;
+  padding: 8px;
   margin: 0px 10px;
 }
 #subscribe_block > button {
-  width: 17%;
-  height: 35px;
+  width: 200px;
+  padding: 10px;
   margin: 0px 10px;
   background-color: #288acf;
   border: none;
@@ -128,3 +124,16 @@
   font-size: small;
 }
 /* footer ends */
+@media screen and (max-width: 1000px) {
+  .banner_content {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner_content {
+    width: 50%;
+  }
+  #subscribe_block {
+    flex-direction: column;
+  }
+}
