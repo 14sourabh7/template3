@@ -7,7 +7,7 @@
 }
 /* navigation bar starts */
 #top_nav {
-  height: 40px;
+  height: 30px;
   padding: 20px 40px 20px 40px;
 
   display: flex;
@@ -16,9 +16,7 @@
 #top_nav > h2 {
   margin-top: 5px;
 }
-.right_nav {
-  /* float: right; */
-}
+
 .right_nav li {
   list-style: none;
   display: inline;
@@ -29,17 +27,58 @@
 /* /* banner start * */
 #banner {
   background-color: #eeeeee;
-  height: 30%;
+  height: 25%;
   padding: 15px 15px 10px 15px;
 }
 .banner_content {
   width: 20%;
 }
 .banner_content > h2 {
-  margin-top: 5px;
+  margin-top: 3px;
 }
 .banner_content > p {
   font-size: small;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
-/* banner end */ ;
+/* banner end */
+/* main boxes start */
+
+#main {
+  display: flex;
+  height: 30%;
+
+  margin: auto;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box_item {
+  width: 17%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+#gray_color {
+  height: 100px;
+  background-color: #eeeeee;
+  width: 100%;
+  margin-bottom: 5px;
+  color: #eeeeee;
+}
+
+.box_item > h3 {
+  padding: 5px;
+}
+.box_item > p {
+  margin: 10px 10px;
+  font-size: small;
+  text-align: justify;
+}
+.box_item > a {
+  font-size: small;
+  margin: 5px;
+  color: gray;
+}
+/* main boxes end */
